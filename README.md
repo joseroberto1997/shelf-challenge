@@ -19,8 +19,8 @@ Shelf desenvolvida de acordo com os requisitos técnicos
 
 ## Features adicionais
 
-- Adição do react splide
-- Criação de local storage para armazenar lista de favoritos e produtos
+- React splide
+- Armazenamento no localstorage de lista de favoritos e produtos
 
 ## Instalação
 
@@ -41,22 +41,22 @@ Instale shelf-challenge com npm ou yarn
 
 Desktop:
 
-![Desktop](assets/tela-1.png)
+![Desktop](src/assets/tela-1.png)
 
 Tablet:
 
-![Tablet](assets/tela-2.png)
+![Tablet](src/assets/tela-2.png)
 
 Mobile:
 
-![Mobile](assets/tela-3.png)
+![Mobile](src/assets/tela-3.png)
 
 ## Demonstração
 
 Slider Carrossel:
 
-![Slider](assets/funcionalidade.gif)
+![Slider](src/assets/funcionalidade.gif)
 
 LocalStorage:
 
-![LocalStorage](assets/localstorage.gif)
+![LocalStorage](src/assets/localstorage.gif)

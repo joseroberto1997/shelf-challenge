@@ -88,14 +88,3 @@ function Shelf() {
 }
 
 export default Shelf;
-
-<Splide hasTrack={false} aria-label="...">
-  <SplideTrack>
-    <SplideSlide>...</SplideSlide>
-  </SplideTrack>
-
-  <div className="splide__arrows">
-    <button className="splide__arrow splide__arrow--prev">Prev</button>
-    <button className="splide__arrow splide__arrow--next">Next</button>
-  </div>
-</Splide>;

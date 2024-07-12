@@ -41,22 +41,22 @@ Instale shelf-challenge com npm ou yarn
 
 Desktop:
 
-![Desktop](https://imgur.com/a/hB1Fx2J)
+![Desktop](assets/tela-1.png)
 
 Tablet:
 
-![Tablet](https://imgur.com/a/nOy3z5N)
+![Tablet](assets/tela-2.png)
 
 Mobile:
 
-![Mobile](https://imgur.com/a/PywvaBv)
+![Mobile](assets/tela-3.png)
 
 ## Demonstração
 
 Slider Carrossel:
 
-![Slider](https://imgur.com/CO8Prn7)
+![Slider](assets/funcionalidade.gif)
 
 LocalStorage:
 
-![LocalStorage](https://imgur.com/a/UZ2TSXM)
+![LocalStorage](assets/localstorage.gif)

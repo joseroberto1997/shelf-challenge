@@ -10,6 +10,18 @@
     gap: 32px;
     padding: 32px;
     border-radius: 8px;
+    position: relative;
+
+    @media (max-width: 1280px) {
+      max-width: 320px;
+    }
+  }
+
+  &__wishlist {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    cursor: pointer;
   }
 
   &__image {
@@ -84,6 +96,17 @@
 
     &:hover {
       background-color: #1c6c3e;
+    }
+  }
+
+  .splide__pagination {
+    margin-top: 10px;
+    bottom: unset !important;
+
+    &__page {
+      &.is-active {
+        background-color: #40b25c;
+      }
     }
   }
 }

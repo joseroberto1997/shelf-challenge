@@ -1,5 +1,7 @@
 import "./style.scss";
 
+// import ImageWishListDefault from "../../assets/wishlist-default.svg";
+
 interface ShelfItemProps {
   id: number;
   title: string;
@@ -10,6 +12,7 @@ interface ShelfItemProps {
 function ShelfItem({ id, title, price, image }: ShelfItemProps) {
   return (
     <div className="shelf__item" key={id}>
+      <div className="shelf__wishlist" />
       <img className="shelf__image" src={image} alt={title} />
       <p className="shelf__title">{title}</p>
       <p className="shelf__price">

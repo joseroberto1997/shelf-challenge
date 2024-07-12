@@ -15,7 +15,14 @@ export interface WishListButtonProps {
 
 export interface CartContextProps {
   wishlist: WishListButtonProps[];
+  minicart: ProductProps[];
   productWishList: (id: number, title: string, price: number) => void;
+  productMinicartList: (
+    id: number,
+    title: string,
+    price: number,
+    image: string
+  ) => void;
 }
 
 export interface CartProviderProps {

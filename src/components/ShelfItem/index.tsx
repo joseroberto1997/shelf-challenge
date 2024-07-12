@@ -1,4 +1,5 @@
 import { ProductProps } from "../../typings";
+import BuyButton from "../BuyButton";
 import WishListButton from "../WishListButton";
 import "./style.scss";
 
@@ -33,7 +34,7 @@ function ShelfItem({ id, title, price, image }: ProductProps) {
           sem juros
         </p>
       </p>
-      <button className="shelf__buy-button">Adicionar</button>
+      <BuyButton id={id} image={image} title={title} price={price} />
     </div>
   );
 }

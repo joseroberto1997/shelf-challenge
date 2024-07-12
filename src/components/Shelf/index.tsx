@@ -9,13 +9,7 @@ import "@splidejs/react-splide/css";
 import ShelfItem from "../ShelfItem";
 
 import "./style.scss";
-
-interface ProductProps {
-  id: number;
-  title: string;
-  price: number;
-  image: string;
-}
+import { ProductProps } from "../../typings";
 
 function Shelf() {
   const [products, setProducts] = useState<ProductProps[]>([]);
@@ -71,15 +65,16 @@ function Shelf() {
       >
         <SplideTrack>
           {products.map((product) => (
-            <SplideSlide key={product.id}>
-              <ShelfItem
-                id={product.id}
-                key={product.id}
-                title={product.title}
-                price={product.price}
-                image={product.image}
-              />
-            </SplideSlide>
+            <>
+              <SplideSlide key={product.id}>
+                <ShelfItem
+                  id={product.id}
+                  title={product.title}
+                  price={product.price}
+                  image={product.image}
+                />
+              </SplideSlide>
+            </>
           ))}
         </SplideTrack>
       </Splide>

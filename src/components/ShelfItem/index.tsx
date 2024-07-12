@@ -1,16 +1,11 @@
+import { ProductProps } from "../../typings";
 import WishListButton from "../WishListButton";
 import "./style.scss";
-interface ShelfItemProps {
-  id: number;
-  title: string;
-  price: number;
-  image: string;
-}
 
-function ShelfItem({ id, title, price, image }: ShelfItemProps) {
+function ShelfItem({ id, title, price, image }: ProductProps) {
   return (
     <div className="shelf__item" key={id}>
-      <WishListButton />
+      <WishListButton id={id} title={title} price={price} />
       <img className="shelf__image" src={image} alt={title} />
       <p className="shelf__title">{title}</p>
       <p className="shelf__price">

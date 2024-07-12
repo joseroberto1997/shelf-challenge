@@ -1,0 +1,89 @@
+.shelf {
+  &__item {
+    max-width: 304px;
+    width: 100%;
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    gap: 32px;
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 240px;
+    height: 240px;
+    object-fit: contain;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: #1c1c1c;
+    height: 60px;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4px;
+
+    & .list-price {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: -0.005em;
+      color: #b5b5b6;
+      text-decoration: line-through;
+    }
+
+    & .best-price {
+      color: #da4b4f;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: -0.005em;
+      text-align: left;
+    }
+
+    & .installments {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: -0.005em;
+      color: #b5b5b6;
+
+      span {
+        color: #1c1c1c;
+      }
+    }
+  }
+
+  &__buy-button {
+    width: 100%;
+    max-width: 240px;
+    height: 48px;
+    background-color: #40b25c;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.6s;
+
+    &:hover {
+      background-color: #1c6c3e;
+    }
+  }
+}

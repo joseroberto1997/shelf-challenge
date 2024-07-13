@@ -22,7 +22,13 @@ function BuyButton({ id, image, title, price }: ProductProps) {
       className={`shelf__buy-button ${active ? "active" : ""}`}
       onClick={handleClick}
     >
-      {active && <img src={CheckIcon} />}Adicionar
+      {active ? (
+        <>
+          <img src={CheckIcon} alt="Check icon" /> Adicionado
+        </>
+      ) : (
+        "Adicionar"
+      )}
     </button>
   );
 }

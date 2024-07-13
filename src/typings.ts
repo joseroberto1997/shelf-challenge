@@ -13,6 +13,12 @@ export interface WishListButtonProps {
   price: number;
 }
 
+export interface CartItemSummaryProps {
+  title: string;
+  price: number;
+  image: string;
+}
+
 export interface CartContextProps {
   wishlist: WishListButtonProps[];
   minicart: ProductProps[];
